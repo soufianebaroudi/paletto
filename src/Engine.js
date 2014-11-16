@@ -2,6 +2,7 @@
 
 var paletto = function () {
 
+    var NumberPiece = 36;
     var board;
 
 
@@ -59,6 +60,7 @@ var paletto = function () {
     this.isColor = function () {
         var test;
         for (var i = 0; i < 6; i++) {
+
             for (var j = 0; j < 6; j++) {
 
                 if (board[i][j] = board [i][j + 1] ||
@@ -66,11 +68,11 @@ var paletto = function () {
                     (board[i][j] = board [i + 1][j]) ||
                     (board [i][j] = board [i - 1][j])
                     ) {
+
                     test = 0;
                 }
 
                 else test = 1;
-
             }
         }
         return test;
@@ -78,6 +80,16 @@ var paletto = function () {
 
     this.isYellow = function () {
         return board[5][0];
+    };
+
+     this.RemovePiece = function(){
+
+        NumberPiece = NumberPiece - 1;
+     };
+
+     this.getNumberPiece = function(){
+
+       return NumberPiece;
     };
 
 

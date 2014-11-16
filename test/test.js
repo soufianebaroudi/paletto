@@ -14,3 +14,10 @@ PalettoTestCase.prototype.testStory2 = function () {
     var game = new paletto();
     assertTrue(game.isYellow() == "yellow");
 };
+
+PalettoTestCase.prototype.testStory3 = function () {
+
+    var game = new paletto();
+    game.RemovePiece();
+    assertTrue(game.getNumberPiece() == 35);
+};
