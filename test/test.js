@@ -21,3 +21,11 @@ PalettoTestCase.prototype.testStory3 = function () {
     game.RemovePiece();
     assertTrue(game.getNumberPiece() == 35);
 };
+
+PalettoTestCase.prototype.testStory4 = function () {
+
+    var game = new paletto();
+    game.RemovePiece();
+    game.RemovePiece();
+    assertTrue(game.getNumberPiece() == 33);
+};
