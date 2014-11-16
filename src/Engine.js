@@ -4,6 +4,9 @@ var paletto = function () {
 
     var NumberPiece = 36;
     var board;
+    var j1 = 0;
+    var j2 = 0;
+
 
 
     var init = function () {
@@ -91,6 +94,7 @@ var paletto = function () {
 
        return NumberPiece;
     };
+
 
 
         init();

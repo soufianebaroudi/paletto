@@ -20,6 +20,13 @@ PalettoTestCase.prototype.testStory3 = function () {
     var game = new paletto();
     game.RemovePiece();
     assertTrue(game.getNumberPiece() == 35);
+    };
+
+PalettoTestCase.prototype.testStory3Bis = function () {
+
+    var game = new paletto();
+    game.NumberPiecePlayer2();
+    assertTrue(game.NumberPieceJauneJ1() == "yellow")
 };
 
 PalettoTestCase.prototype.testStory4 = function () {
@@ -28,4 +35,14 @@ PalettoTestCase.prototype.testStory4 = function () {
     game.RemovePiece();
     game.RemovePiece();
     assertTrue(game.getNumberPiece() == 33);
+
 };
+
+PalettoTestCase.prototype.testStory4Bis = function () {
+
+    var game = new paletto();
+    game.NumberPiecePlayer2();
+    assertTrue(game.NumberPieceBlackJ2() == 2);
+
+};
+
